@@ -30,7 +30,7 @@ jobs:
             git clone https://github.com/karthikyashwanth/eks-argo-todo-app.git
             git config --global user.email "karthikyashwanth27@gmail.com"
             git config --global user.name "yeswanth"
-            cd eks-argo-todo-app-kube-manifest
+            cd eks-argo-todo-app
             pwd
             echo $TAG
             sed -i "s/build-.*/build-$TAG/g" manifest/deployment.yaml
