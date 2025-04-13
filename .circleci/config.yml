@@ -12,7 +12,7 @@ jobs:
           command: |
             version="build-$CIRCLE_BUILD_NUM"
             echo $version
-            docker build -t chandikas/todo-app:$version .
+            docker build -t yeswanthk/todo-app:$version .
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
             docker push chandikas/todo-app:$version
 
@@ -27,9 +27,9 @@ jobs:
           command: |
             TAG=$CIRCLE_BUILD_NUM
             ((TAG--))
-            git clone https://github.com/CDIT-02/eks-argo-todo-app-kube-manifest.git
-            git config --global user.email "schandika2024@gmail.com"
-            git config --global user.name "chandikas"
+            git clone https://github.com/karthikyashwanth/eks-argo-todo-app.git
+            git config --global user.email "karthikyashwanth27@gmail.com"
+            git config --global user.name "karthikyashwanth"
             cd eks-argo-todo-app-kube-manifest
             pwd
             echo $TAG
