@@ -87,7 +87,7 @@ class App extends Component {
                         fontWeight: "bolder",
                     }}
                 >
-                    CDIT-2-DEMO - "Done by Yashwanthk"
+                    CDIT-2-DEMO - "Done by Yashwanth"
                 </Row>
   
                 <hr />
